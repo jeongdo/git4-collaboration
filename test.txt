@@ -172,4 +172,13 @@ To https://github.com/jeongdo/git4-collaboration.git
 
 C:\Git\git4-collaboration>
 
+sourcetree merge branch test
 
+1) pull은 원격저장소를 지역저장소를 다운받는다. (Fetch) 그리고, 원격저장소 브랜치를 지역저장소로 merge 한다. 
+2) 일단 Fetch를 하라. 이제 Pull 말고... orgin/maste가 위로 올라가 있다.
+3) 병합전 테스트를 해보자. test라는 branch를 하나 따자. 현재 지역저장소 위치이다.
+4) 최상단 우클릭 merge (최신 원격저장소 내용을 master로 merge)
+5) test와 orgin/master가 같은 상태가 된다. 
+6) 자 잘되는지 테스트 해보아라..,.
+7) 지역 master 브랜치 더블 클릭 후, 아래 test 브랜치 우클릭 merge test branct to current branch.. 와우!!
+8) 병합은 test 브랜치 삭제
