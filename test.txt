@@ -182,3 +182,143 @@ sourcetree merge branch test
 6) 자 잘되는지 테스트 해보아라..,.
 7) 지역 master 브랜치 더블 클릭 후, 아래 test 브랜치 우클릭 merge test branct to current branch.. 와우!!
 8) 병합은 test 브랜치 삭제
+
+
+C:\Users\Heo\Documents\git4-collaboration>git pull
+Already up to date.
+
+C:\Users\Heo\Documents\git4-collaboration>git pull origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Heo\Documents\git4-collaboration>git pull
+Already up to date.
+
+C:\Users\Heo\Documents\git4-collaboration>git remote add upstream
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\Heo\Documents\git4-collaboration>git remote add upstream https://github.com/jeongdo/git4-collaboration.git
+
+C:\Users\Heo\Documents\git4-collaboration>git remote -v
+origin  https://github.com/clouldlin/git4-collaboration.git (fetch)
+origin  https://github.com/clouldlin/git4-collaboration.git (push)
+upstream        https://github.com/jeongdo/git4-collaboration.git (fetch)
+upstream        https://github.com/jeongdo/git4-collaboration.git (push)
+
+C:\Users\Heo\Documents\git4-collaboration>git fetch upstream
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 13 (delta 4), reused 12 (delta 4), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+From https://github.com/jeongdo/git4-collaboration
+ * [new branch]      master     -> upstream/master
+
+C:\Users\Heo\Documents\git4-collaboration>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Heo\Documents\git4-collaboration>git shortlog
+hjchoi (2):
+      git pull request?
+      git pull request
+
+nervcv (9):
+      work 1
+      work 2
+      work 3
+      nervcv work1
+      Merge branch 'master' of https://github.com/jeongdo/git4-collaboration merge
+      work 4
+      master vs origin/master
+      git fetch??
+      git pull == git fetch; git merge orgin/master
+
+
+C:\Users\Heo\Documents\git4-collaboration>git log
+commit 28560127411bd25aa9748c90c759d123dba8eadf (HEAD -> master, origin/master, origin/HEAD)
+Author: hjchoi <a931113@naver.com>
+Date:   Thu Mar 28 19:29:18 2019 +0900
+
+    git pull request
+
+commit 2ffe07b3bfb9b9b8e37c1f35b223548d206c050e
+Author: hjchoi <a931113@naver.com>
+Date:   Thu Mar 28 19:28:10 2019 +0900
+
+    git pull request?
+
+commit 99b17fe940322ec3ca48d2fcfa59f57c11c89d32
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 17:55:46 2019 +0900
+
+    git pull == git fetch; git merge orgin/master
+
+commit 6d9e1ca63acab2e2d66f0a684faf668abaac9b44
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 17:51:15 2019 +0900
+
+    git fetch??
+
+commit 4cdf591c9211945b4a06b87ef22412530ac270ae
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 17:46:06 2019 +0900
+
+    master vs origin/master
+
+commit fbde5b56b57f28b8bf9c9bb7b765ffcbcfef2677
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 17:40:19 2019 +0900
+
+    work 4
+
+commit 7039c6223d1632d913c70ddf5b5dd263f63b1255
+Merge: 1c0fab9 69b17d2
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 17:37:40 2019 +0900
+
+    Merge branch 'master' of https://github.com/jeongdo/git4-collaboration
+    merge
+
+commit 69b17d2645f53a848942aeb9927de40f48d058b1
+
+C:\Users\Heo\Documents\git4-collaboration>git merge upstream/master
+Updating 2856012..75c5949
+Fast-forward
+ test.txt | 35 ++++++++++++++++++++++++++++++++++-
+ 1 file changed, 34 insertions(+), 1 deletion(-)
+
+C:\Users\Heo\Documents\git4-collaboration>git log
+commit 75c5949ad9bdca58083d2d3e0e82e2d1ddf1d461 (HEAD -> master, upstream/master)
+Author: nervcv <nervcv@gmail.com>
+Date:   Thu Mar 28 20:28:09 2019 +0900
+
+    sourcetree merge branch test
+
+C:\Users\Heo\Documents\git4-collaboration>git push origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 2.58 KiB | 528.00 KiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/clouldlin/git4-collaboration.git
+   2856012..75c5949  master -> master
+
+C:\Users\Heo\Documents\git4-collaboration>
