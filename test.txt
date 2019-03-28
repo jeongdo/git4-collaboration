@@ -151,3 +151,4 @@ To https://github.com/clouldlin/git4-collaboration.git
 C:\Users\Heo\Documents\git4-collaboration>
 
 sourcetree 경우 merge는 resolve conflicts --> 해결 후 Marked Resolved
+sourcetree 경우 test 브랜치를 만들고 블라블라.. 한번 해보자
