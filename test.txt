@@ -1,0 +1,16 @@
+Microsoft Windows [Version 10.0.17763.379]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>git remote add origin https://github.com/jeongdo/git4-collaboration.git
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 201 bytes | 100.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jeongdo/git4-collaboration.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>
+
