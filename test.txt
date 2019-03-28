@@ -1,6 +1,18 @@
 Microsoft Windows [Version 10.0.17763.379]
 (c) 2018 Microsoft Corporation. All rights reserved.
 
+C:\Dropbox\Git\git4-cli\git4-collaboration>git init
+Initialized empty Git repository in C:/Dropbox/Git/git4-cli/git4-collaboration/.git/
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>git add *
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>git commit -m "work 1"
+[master (root-commit) f3c7f83] work 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+# git 저장소와 연결
+
 C:\Dropbox\Git\git4-cli\git4-collaboration>git remote add origin https://github.com/jeongdo/git4-collaboration.git
 
 C:\Dropbox\Git\git4-cli\git4-collaboration>git push -u origin master
@@ -12,5 +24,4 @@ To https://github.com/jeongdo/git4-collaboration.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
-C:\Dropbox\Git\git4-cli\git4-collaboration>
-
+# 협업자 등록 (nervcv)
