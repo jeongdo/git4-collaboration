@@ -322,3 +322,11 @@ To https://github.com/clouldlin/git4-collaboration.git
    2856012..75c5949  master -> master
 
 C:\Users\Heo\Documents\git4-collaboration>
+
+upstream을 이해하게 되었다.
+
+원본 오픈소스 저장소를 upstream으로 추가
+git remote add upstream https://github.com/jeongdo/git4-collaboration.git
+해당 fork한 master로 git merge upstream/master 후 git push
+다시 내용 수정후 다시 Create pull request 요청
+2번 3번 반복
