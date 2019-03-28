@@ -26,18 +26,14 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 # 협업자 등록 (nervcv)
 
-C:\Dropbox\Git\git4-cli\git4-collaboration>git shortlog
-nervcv (6):
-      work 1
-      work 2
-      work 3
-      nervcv work1
-      Merge branch 'master' of https://github.com/jeongdo/git4-collaboration merge
-      work 4
-
-
 C:\Dropbox\Git\git4-cli\git4-collaboration>git log --graph
-* commit fbde5b56b57f28b8bf9c9bb7b765ffcbcfef2677 (HEAD -> master, origin/master)
+* commit 4cdf591c9211945b4a06b87ef22412530ac270ae (HEAD -> master)
+| Author: nervcv <nervcv@gmail.com>
+| Date:   Thu Mar 28 17:46:06 2019 +0900
+|
+|     master vs origin/master
+|
+* commit fbde5b56b57f28b8bf9c9bb7b765ffcbcfef2677 (origin/master)
 | Author: nervcv <nervcv@gmail.com>
 | Date:   Thu Mar 28 17:40:19 2019 +0900
 |
@@ -75,4 +71,54 @@ C:\Dropbox\Git\git4-cli\git4-collaboration>git log --graph
 
       work 1
 
-C:\Dropbox\Git\git4-cli\git4-collaboration>
+C:\Dropbox\Git\git4-cli\git4-collaboration>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Dropbox\Git\git4-cli\git4-collaboration>git log --graph
+* commit 4cdf591c9211945b4a06b87ef22412530ac270ae (HEAD -> master, origin/master)
+| Author: nervcv <nervcv@gmail.com>
+| Date:   Thu Mar 28 17:46:06 2019 +0900
+|
+|     master vs origin/master
+|
+* commit fbde5b56b57f28b8bf9c9bb7b765ffcbcfef2677
+| Author: nervcv <nervcv@gmail.com>
+| Date:   Thu Mar 28 17:40:19 2019 +0900
+|
+|     work 4
+|
+*   commit 7039c6223d1632d913c70ddf5b5dd263f63b1255
+|\  Merge: 1c0fab9 69b17d2
+| | Author: nervcv <nervcv@gmail.com>
+| | Date:   Thu Mar 28 17:37:40 2019 +0900
+| |
+| |     Merge branch 'master' of https://github.com/jeongdo/git4-collaboration
+| |     merge
+| |
+| * commit 69b17d2645f53a848942aeb9927de40f48d058b1
+| | Author: nervcv <nervcv@gmail.com>
+| | Date:   Thu Mar 28 17:28:27 2019 +0900
+| |
+| |     nervcv work1
+| |
+* | commit 1c0fab94be3d773eede0ade78757c3fe4c34cd16
+|/  Author: nervcv <nervcv@gmail.com>
+|   Date:   Thu Mar 28 17:26:29 2019 +0900
+|
+|       work 3
+|
+* commit cd5494ba1565ee22d5bb3bae83fe2a7714f766ff
+| Author: nervcv <nervcv@gmail.com>
+| Date:   Thu Mar 28 17:02:34 2019 +0900
+|
+|     work 2
+|
+* commit f3c7f834b232e995004b1f6632c379c1de4f3ae2
+  Author: nervcv <nervcv@gmail.com>
+  Date:   Thu Mar 28 16:55:28 2019 +0900
+
+      work 1
