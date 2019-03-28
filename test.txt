@@ -124,3 +124,28 @@ C:\Dropbox\Git\git4-cli\git4-collaboration>git log --graph
       work 1
 
 # git pull = git fetch; git merge
+
+
+#pull request?
+
+C:\Users\Heo\Documents>git commit -am "git pull request?"
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\Heo\Documents>cd git4-collaboration
+
+C:\Users\Heo\Documents\git4-collaboration>git commit -am "git pull request?"
+[master 2ffe07b] git pull request?
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\Heo\Documents\git4-collaboration>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 142.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/clouldlin/git4-collaboration.git
+   99b17fe..2ffe07b  master -> master
+
+C:\Users\Heo\Documents\git4-collaboration>
