@@ -149,3 +149,5 @@ To https://github.com/clouldlin/git4-collaboration.git
    99b17fe..2ffe07b  master -> master
 
 C:\Users\Heo\Documents\git4-collaboration>
+
+sourcetree 경우 merge는 resolve conflicts --> 해결 후 Marked Resolved
