@@ -122,3 +122,5 @@ C:\Dropbox\Git\git4-cli\git4-collaboration>git log --graph
   Date:   Thu Mar 28 16:55:28 2019 +0900
 
       work 1
+
+# git pull = git fetch; git merge
